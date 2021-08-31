@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom"
+import Navigation from "./components/Navigation"
 import Home from "./Pages/Home"
 import Reservation from "./Pages/Reservation"
 import SignIn from "./Pages/SignIn"
@@ -6,11 +7,10 @@ import SignIn from "./Pages/SignIn"
 const Router = () => {
   return (
     <BrowserRouter>
-      <Switch>
+    <Navigation />
         <Route path="/" component={Home} exact={true} />
         <Route path="/reservation" component={Reservation} />
         <Route path="/signin" component={SignIn} />
-      </Switch>
     </BrowserRouter>
   )
 }
