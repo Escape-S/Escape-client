@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StoreContainer = styled.div`
   display: flex;
-  margin: 30px;
+  margin: 30px 0;
 `;
 const StoreImg = styled.img`
   width: 150px;
